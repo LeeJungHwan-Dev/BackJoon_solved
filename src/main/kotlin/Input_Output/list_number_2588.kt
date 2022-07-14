@@ -1,10 +1,11 @@
 package Input_Output
 
 fun main() {
-    println("         ,r'\"7")
-    println("r`-_   ,'  ,/")
-    println(" \\. \". L_r'")
-    println("   `~\\/")
-    println("      |")
-    println("      |")
+    val firstNumber = readLine()!!.toInt()
+    val lastNumber = readLine().toString()
+
+    println("${firstNumber * lastNumber!!.get(2).toString().toInt()}")
+    println("${firstNumber * lastNumber!!.get(1).toString().toInt()}")
+    println("${firstNumber * lastNumber!!.get(0).toString().toInt()}")
+    println("${firstNumber * lastNumber!!.toInt()}")
 }
